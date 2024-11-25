@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Almanack for 2024 - Ben Drury</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+   
+    <!-- Set 1 (Current Images) -->
+<div class="image-set" id="set1">
+  
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/e6037f9a-e0a5-4d5a-8c8d-cbfde0ce14f5/2-+Edit.jpg?format=500w" alt="Waterfall" class="image waterfall" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/cd034761-87f9-45cd-8b61-cb73e39a6372/14-+Edit.jpg?format=500w" class="image snowy-road" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/83d1f4df-cb72-407c-b91e-dd41c1bdabc3/L1035252-Edit+-+Edit-3.jpg?format=500w" alt="Smoke Protest" class="image smoke-protest" onclick="openModal(this)">
+    
+    <img src="h ttps://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/10486d61-fd69-4d20-a6e6-df105996f6a5/4-+Edit.jpg?format=500w" alt="Window Scene" class="image window-scene" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/154bca86-8618-4ecb-bbb9-8d67018083bf/L1080138+-+Edit+4.jpeg?format=500w" alt="Morocco 1" class="image street-man" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/5e3c4954-bb6e-4942-a735-f81763a4b14e/22-+Edit.jpg?format=500w" alt="Shopkeeper" class="image shopkeeper" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/5778fdfe-e9db-45eb-95f6-9633d6a3d971/L1061899-Enhanced-NR-2-+Edit.jpg?format=500w" alt="Portrait1" class="image portrait" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/71ec8e02-f419-4045-9ead-6cf9f80f84a8/L1060066-%2520Edit-4.jpg?format=500w" alt="Leica MP Close-Up" class="image camera-closeup" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/3e37a030-e3a6-4023-a8d5-445d572ab517/000040960026+-+Edit.jpg?format=500w" alt="Building" class="image building" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/cb5395bf-c502-4ec6-9da4-73194694c6a8/12-+Edit.jpg?format=500w" alt="IcelandChurch" class="image church" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/76bc5547-283a-4b07-aabd-82cff78376e7/L1080629-+Edit.jpg?format=500w" alt="Morocco Bike" class="image field" onclick="openModal(this)">
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/26057fc0-6d6a-45da-91be-f45aff0c0284/000125900006-+Edit-2.jpeg?format=500w" alt="Morocco Man 2" class="image moroccoman2" onclick="openModal(this)">
+    
+<img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/612aed8f-3701-4677-af17-2074ef6ed391/25-+Edit.jpg?format=500w" alt="JonRocks" class="image rockman" onclick="openModal(this)">
+  <!-- Add other images here... -->
+  </div>
+    
+    <!-- Set 2 (New Images) -->
+<div class="image-set" id="set2">
+  
+  <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/675b02ee-3e7f-4617-b5dd-9c3ae0e9584a/000040000011+-+Edit.jpg?format=500w" alt="set2image1" class="iamge set2image1" onclick="openModal(this)">
+  
+  <img src="https://images.squarespace-cdn.com/content/v1/6521199b0fa33669d3903f2c/1696851794097-IHJO5NHSUBPO28J6WSMQ/L1000323%2B-%2BEdit.jpg?format=500w" alt="set2image2" class="image set2image2" onclick="openModal(this)">
+  
+  <!-- Add new images for set 2 here... -->
+</div>
+
+<!-- Set 3 (New Images) -->
+<div class="image-set" id="set3">
+  <!-- Add new images for set 3 here... -->
+</div>
+    
+    <!-- Text at the center -->
+    <div class="text">
+      <h1>An Almanack for 2024</h1>
+      <h2><a href="https://www.orderedthings.com/bendrury" target="_blank" rel="noopener noreferrer">Ben Drury</a></h2>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+    
+    <!-- Corner lines inside the container -->
+    <div class="line-top-left"></div>
+    <div class="line-vertical-top-left"></div>
+    <div class="line-bottom-right"></div>
+    <div class="line-vertical-bottom-right"></div>
+    <div class="line-bottom-left"></div>
+    <div class="line-vertical-bottom-left"></div>
+    <div class="line-top-right"></div>
+    <div class="line-vertical-top-right"></div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
