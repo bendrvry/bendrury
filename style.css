@@ -1,0 +1,310 @@
+/* styles.css */
+html, body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow: hidden; /* Disable scrolling */
+  cursor: crosshair
+}
+
+/* Top-left corner line */
+.line-top-left {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+  width: 80px; /* Length of the horizontal line */
+  height: 2px; /* Thickness */
+  background-color: black; /* Line color */
+}
+
+.line-vertical-top-left {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+  width: 2px; /* Thickness */
+  height: 80px; /* Length of the vertical line */
+  background-color: black; /* Line color */
+}
+
+/* Bottom-right corner line */
+.line-bottom-right {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 80px; /* Length of the horizontal line */
+  height: 2px; /* Thickness */
+  background-color: black; /* Line color */
+}
+
+.line-vertical-bottom-right {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 2px; /* Thickness */
+  height: 80px; /* Length of the vertical line */
+  background-color: black; /* Line color */
+}
+
+/* Bottom-left corner */
+.line-bottom-left {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  width: 80px; /* Length of the horizontal line */
+  height: 2px; /* Thickness */
+  background-color: black; /* Line color */
+}
+
+.line-vertical-bottom-left {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  width: 2px; /* Thickness */
+  height: 80px; /* Length of the vertical line */
+  background-color: black; /* Line color */
+}
+
+/* Top-right corner */
+.line-top-right {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  width: 80px; /* Length of the horizontal line */
+  height: 2px; /* Thickness */
+  background-color: black; /* Line color */
+}
+
+.line-vertical-top-right {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  width: 2px; /* Thickness */
+  height: 80px; /* Length of the vertical line */
+  background-color: black; /* Line color */
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.text a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures it takes the same color as the text */
+}
+
+.text a:hover {
+  cursor: context-menu; /* Optional to add underline on hover */
+}
+
+.image {
+  position: absolute;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: +3;
+}
+
+/* Basic styling for image sets */
+.image-set {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 2s ease-in-out; /* Smooth transition */
+  curser: crosshair;
+}
+
+/* Visible set */
+.image-set.active {
+  opacity: 1; /* Only active set will be visible */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 60px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Close button positioned out of page */
+.close {
+  position: absolute;
+  top: -15px;
+  right: -35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+/* Existing Images (position unchanged) */
+
+/* --------- SET 1 IMAGES --------- */
+.waterfall {
+  top: 30px;
+  left: 0px;
+  width: 220px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.snowy-road {
+  top: 50px;
+  right: 0px;
+  width: 240px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.smoke-protest {
+  top: 220px;
+  right: 50px;
+  width: 200px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.window-scene {
+  bottom: -15px;
+  right: 0px;
+  width: 200px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.field {
+  bottom: 70px;
+  left: 50px;
+  width: 240px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.street-man {
+  bottom: 200px;
+  left: 100px;
+  width: 300px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.shopkeeper {
+  top: 600px;
+  left: 500px;
+  width: 260px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.portrait {
+  bottom: 100px;
+  right: 160px;
+  width: 200px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.camera-closeup {
+  bottom: 125px;
+  right: 380px;
+  width: 250px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.rockman {
+  top: 75px;
+  left: 440px;
+  width: 300px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.building {
+  bottom: 0px;
+  left: 250px;
+  width: 200px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.church {
+  top: 20px;
+  right: 265px;
+  width: 230px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+.moroccoman2 {
+  top: 105px;
+  left: 235px;
+  width: 180px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* --------- SET 2 IMAGES --------- */
+
+.set2image1 {
+  top: 105px;
+  left: 235px;
+  width: 180px;
+  height: auto; /* Auto height to maintain aspect ratio */
+  z-index: 2
+}
+
+.set2image2 {
+  top: 205px;
+  left: 335px;
+  width: 180px;
+  height: auto; /* Auto height to maintain aspect ratio */
+}
